@@ -8,11 +8,8 @@
     <title>點數價值認知問卷調查平台</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
     <!-- 自訂題目樣式 -->
     <style>
@@ -23,7 +20,7 @@
             padding: 30px 0 0 4.25%;
             margin-bottom: 10px;
         }
-
+        
         form .likert {
             list-style: none;
             width: 100%;
@@ -32,11 +29,11 @@
             display: block;
             border-bottom: 2px solid #efefef;
         }
-
+        
         form .likert:last-of-type {
             border-bottom: 0;
         }
-
+        
         form .likert:before {
             content: '';
             position: relative;
@@ -47,23 +44,22 @@
             height: 4px;
             width: 79%;
         }
-
+        
         form .likert li {
             display: inline-block;
             width: 19%;
             text-align: center;
             vertical-align: top;
         }
-
+        
         form .likert li input[type=radio] {
             display: block;
             position: relative;
             top: 0;
             left: 50%;
             margin-left: -6px;
-
         }
-
+        
         form .likert li label {
             width: 100%;
         }
@@ -79,10 +75,10 @@
 
             <!-- OPEN POINT part -->
             <div class="card">
-                <div class="card-header">
+                <div class="card-header" style="background-color:#f08c35;">
                     OPEN POINT使用調查
                 </div>
-                <label class="statement">最近一次使用OPEN POINT進行集點或兌點時間？</label>
+                <label class="statement">最近一次使用<span style="color:#f08c35">OPEN POINT</span>進行集點或兌點時間？</label>
                 <ul class='likert'>
                     <li>
                         <input type="radio" required name="aka_a1" value="5" id="a11">
@@ -107,7 +103,7 @@
                 </ul>
 
 
-                <label class="statement">一個月內使用OPEN POINT進行集點或兌點次數？</label>
+                <label class="statement">一個月內使用<span style="color:#f08c35">OPEN POINT</span>進行集點或兌點次數？</label>
                 <ul class='likert'>
                     <li>
                         <input type="radio" required name="aka_a2" value="5" id="a25">
@@ -132,7 +128,7 @@
                 </ul>
 
 
-                <label class="statement">近期使用OPEN POINT進行集點的金額？</label>
+                <label class="statement">近期使用<span style="color:#f08c35">OPEN POINT</span>進行集點的金額？</label>
                 <ul class='likert'>
                     <li>
                         <input type="radio" required name="aka_a3" value="5" id="a35">
@@ -159,10 +155,10 @@
 
             <!-- LINE POINTS part -->
             <div class="card">
-                <div class="card-header">
+                <div class="card-header" style="background-color:#1dc663;">
                     LINE POINTS使用調查
                 </div>
-                <label class="statement">最近一次使用LINE POINTS進行集點或兌點時間？</label>
+                <label class="statement">最近一次使用<span style="color:#1dc663">LINE POINTS</span>進行集點或兌點時間？</label>
                 <ul class='likert'>
                     <li>
                         <input type="radio" required name="aka_b1" value="5" id="b15">
@@ -186,7 +182,7 @@
                     </li>
                 </ul>
 
-                <label class="statement">一個月內使用LINE POINTS進行集點或兌點次數？</label>
+                <label class="statement">一個月內使用<span style="color:#1dc663">LINE POINTS</span>進行集點或兌點次數？</label>
                 <ul class='likert'>
                     <li>
                         <input type="radio" required name="aka_b2" value="5" id="b25">
@@ -210,7 +206,7 @@
                     </li>
                 </ul>
 
-                <label class="statement">近期使用LINE POINTS進行集點的金額？</label>
+                <label class="statement">近期使用<span style="color:#1dc663">LINE POINTS</span>進行集點的金額？</label>
                 <ul class='likert'>
                     <li>
                         <input type="radio" required name="aka_b3" value="5" id="b35">
@@ -237,10 +233,10 @@
 
             <!-- MOMO part -->
             <div class="card">
-                <div class="card-header">
+                <div class="card-header" style="background-color:#e843a3;">
                     MOMO使用調查
                 </div>
-                <label class="statement">最近一次使用MOMO進行集點或兌點時間？</label>
+                <label class="statement">最近一次使用<span style="color:#e843a3">MOMO</span>進行集點或兌點時間？</label>
                 <ul class='likert'>
                     <li>
                         <input type="radio" required name="aka_c1" value="5" id="c15">
@@ -264,7 +260,7 @@
                     </li>
                 </ul>
 
-                <label class="statement">一個月內使用MOMO進行集點或兌點次數？</label>
+                <label class="statement">一個月內使用<span style="color:#e843a3">MOMO</span>進行集點或兌點次數？</label>
                 <ul class='likert'>
                     <li>
                         <input type="radio" required name="aka_c2" value="5" id="c25">
@@ -288,7 +284,7 @@
                     </li>
                 </ul>
 
-                <label class="statement">近期使用MOMO進行集點的金額？</label>
+                <label class="statement">近期使用<span style="color:#e843a3">MOMO</span>進行集點的金額？</label>
                 <ul class='likert'>
                     <li>
                         <input type="radio" required name="aka_c3" value="5" id="c35">
@@ -321,8 +317,8 @@
 </body>
 
 <script>
-    $(document).ready(function () {
-        $("form").submit(function (e) {
+    $(document).ready(function() {
+        $("form").submit(function(e) {
             var a1 = $('input:radio[name=aka_a1]:checked').val();
             var a2 = $('input:radio[name=aka_a2]:checked').val();
             var a3 = $('input:radio[name=aka_a3]:checked').val();
@@ -338,10 +334,10 @@
             b = parseInt(b1) + parseInt(b2) + parseInt(b3);
             c = parseInt(c1) + parseInt(c2) + parseInt(c3);
 
-            var url1 = 'https://www.surveycake.com/s/ol19Z'; //OP
-            var url2 = 'https://www.surveycake.com/s/dldNN'; //LINE
-            var url3 = 'https://www.surveycake.com/s/Wl1be'; //MOMO
-            var url4 = 'https://www.surveycake.com/s/0Y4m9'; //綜合
+            var url1 = 'https://www.surveycake.com/s/KOwGD'; //OP
+            var url2 = 'https://www.surveycake.com/s/z7X92'; //LINE
+            var url3 = 'https://www.surveycake.com/s/DKleR'; //MOMO
+            var url4 = 'https://www.surveycake.com/s/olVpK'; //綜合
 
             if (a > b) {
                 if (a > c) {
